@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+       *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+       }
+    </style>
+</head>
+<body>
+    
+  <div id='header' class='bg-white md:mt-0 mt-2 border-b-2 w-full h-[15vh] md:h-28'>
+        <div id='upperHeader' class='w-full h-[80%] md:h-[75%] flex md:flex-row flex-col-reverse md:justify-start justify-center items-center '>
+           <div class='flex justify-center  md:gap-4 py-2 items-center  md:gap-2 overflow-hidden md:h-full h-60% w-full md:w-[60%]'>
+            <div id='logo' class='h-full flex items-center justify-center ml-4 w-[30%] md:w-[10%]'>
+                <img src="logo.png" alt="logo"  class='h-full  w-auto'/>
+            </div>
+            <div id='colgName'  >
+                <h1 class='text-[#13325E]  font-bold font-serif text-md w-[70%] md:w-[100%]  md:ml-1 md:text-lg lg:text-3xl'>ABU BAKAR TRADERS</h1>
+           
+           </div>
+
+
+ <div class="md:hidden mr-10 text-black   text-xl">
+ <Button id="menu-close" class="hidden"><i class="fa-solid fa-xmark"></i></Button>
+  <button id="menu-open" class="visible"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+
+          </div>
+            <div id='contact-info' class=' h-[20%] px-3 w-full justify-center md:mr-3 my-2 md:my-0  md:h-full md:w-[40%] flex items-center md:justify-end'>
+<i class="fa-solid fa-phone mr-2"></i>
+            <h2 class=' cursor-pointer mr-3 text-sm md:text-md md:mr-6'>0321 7745691</h2>
+            <h1 class='text-orange-600 mr-4 text-lg'>l</h1>
+<i class="fa-solid fa-envelope mr-2"></i> 
+           <h2>abt00986@gmail.com</h2>
+            </div>
+        </div>
+
+        <div id='lowerHead' class='hidden md:visible bg-black w-full h-[15%] md:h-[25%] border-b-2 md:flex items-center justify-center  border-orange-500'>
+          <ul class='list-none flex gap-3 md:gap-8 font-serif text-sm md:text-lg font-normal text-white'>
+            <li class='hover:text-slate-300'><a href="#contact">Home</a></li>
+            <li class='hover:text-slate-300'><a href="#contact">About Us</a></li>
+            <li class='hover:text-slate-300'><a href="#contact">Products</a></li>
+            <li class='hover:text-slate-300'><a href="#contact">Coverage</a></li>
+            <li class='hover:text-slate-300'><a href="#contact">Contact Us</a></li>
+
+          </ul>
+          
+        </div>
+
+
+       <!--mobile view-->
+       
+
+          <div id="menu-list" class="bg-[#2a2c2b] hidden z-50 absolute top-20 mt-12 w-[30%] right-0 h-10vh  shadow-md ">
+
+  <ul  class="flex flex-col justify-center text-white items-center ">
+    <a class="hover:text-blue-400 py-1 text-center w-full " onClick={toggleMenu} href="#home">Home</a>
+    <a class="hover:text-blue-400 py-1 border-slate-600  border-y text-center w-full" onClick={toggleMenu} href="#about">About Us</a>
+    <a class="hover:text-blue-400 py-1 text-center w-full" onClick={toggleMenu} href="#products">Products</a>
+    <a class="hover:text-blue-400 py-1 border-y border-slate-600 text-center w-full" onClick={toggleMenu} href="#area">Coverage</a>
+    <a class="hover:text-blue-400 py-1 text-center w-full" onClick={toggleMenu} href="#contact">Contact Us</a>
+  </ul>
+        </div> 
+  </div>
+
+
+  <!--HomeSection-->
+
+<div class="w-full h-[25vh] md:h-[80vh] mt-2 md:mt-0 justify-center items-center ">
+    <div class="h-full ">
+        <img src="homeImage.jpeg" class="h-full w-full" alt="">
+    </div>
+</div>    
+
+<script src="script.js"></script>
+</body>
+</html>
