@@ -13,6 +13,28 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
+        #header {
+    /* Position ko zaroori hai animation ke liye */
+    position: relative;
+    
+    /* Animation properties */
+    animation-name: headMotion  ;
+    animation-duration: 2s;
+}
+
+@keyframes headMotion {
+    from {
+        /* Ab top property ke sath unit (px) ka istemal karein */
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
        *{
         box-sizing: border-box;
         margin: 0%;
