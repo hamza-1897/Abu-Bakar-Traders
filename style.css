@@ -1,0 +1,49 @@
+  body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        #header {
+    position: relative;
+    animation-name: headMotion  ;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes headMotion {
+    from {
+   
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+  *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+       }
+
+       #homeanime{
+        position: relative;
+    animation-name: homeAnim  ;
+    animation-duration: 2.5s;
+}
+
+    @keyframes homeAnim {
+    from {
+   
+       left : -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+    
+        opacity: 1;
+    }
+}
